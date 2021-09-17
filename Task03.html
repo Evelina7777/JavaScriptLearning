@@ -1,0 +1,18 @@
+<script>
+// Задание 3. Объявить целочисл переменные и провести операции сравнения
+var a=((Math.random()<0.5) ?-1:1)*parseInt(Math.random()*10);
+var b=((Math.random()<0.5) ?-1:1)*parseInt(Math.random()*10);
+var result;
+console.log(a+" "+b);
+if (a>=0 && b>=0) {
+    result=a-b;
+}
+    else if (a<0 && b<0) {
+        result=a*b;
+    }
+        else {
+            result=a+b; 
+        }
+console.log(result);
+
+</script>

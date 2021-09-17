@@ -1,0 +1,40 @@
+    <script>
+    function sum(arg1,arg2){
+        return arg1+arg2;
+    }
+    function minus(arg1,arg2){
+        return arg1-arg2;
+    }
+    function umnog(arg1,arg2){
+        return arg1*arg2;
+    } 
+        
+    function delenie(arg1,arg2){
+        return (arg1/arg2).toFixed(2);
+    }
+    function mathOperation(arg1, arg2, operation){
+        switch(operation){
+        case("сложить"): 
+            document.write("Сложение двух чисел = "+sum(arg1,arg2));
+            break;
+        case("вычесть"): 
+            document.write("Вычитание двух чисел = "+minus(arg1,arg2));
+            break;
+        case("умножить"): 
+            document.write("Умножение двух чисел = "+umnog(arg1,arg2));
+            break;
+        case("поделить"): 
+            document.write("Деление двух чисел = "+delenie(arg1,arg2));
+            break;
+        default: 
+            document.write("Введено неверное значение чисел или операции");
+            break;
+        }
+        
+    }
+    var arg1=+prompt("Введите число a");
+    var arg2=+prompt("Введите число b");
+    var operation=prompt("Введите арифметическую операцию (сложить, вычесть, умножить, поделить)");
+    mathOperation(arg1,arg2,operation); 
+</script> 
+
