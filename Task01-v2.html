@@ -1,0 +1,33 @@
+<script>
+      //Преобразование строки в массив
+    // var fio="Иванов Иван Иванович";
+    // var arrayFio=fio.split(" ");//Элемент друг от друга отделяются пробелом
+    // // alert(arrayFio[1]);
+    var answer=+prompt("Введите число от 0 до 999 ");
+    var arrayNumbers=Array.from(String(answer));
+    function number(x){
+        if (x>0 && x <10){
+             number.edinica=arrayNumbers[0];
+             number.desyatka=0;
+             number.sotnya=0;
+             console.log("Сотни "+number.sotnya+" десятки "+number.desyatka+" единицы "+number.edinica);
+         } else if (x>=10 && x<100){
+         number.desyatka=arrayNumbers[0];
+         number.edinica=arrayNumbers[1];
+         number.sotnya=0;
+         console.log("Сотни "+number.sotnya+" десятки "+number.desyatka+" единицы "+number.edinica);
+        } else if (x>=100 && x<1000){
+     number.sotnya=arrayNumbers[0];
+     number.edinica=arrayNumbers[2];
+     number.desyatka=arrayNumbers[1];
+     console.log("Сотни "+number.sotnya+" десятки "+number.desyatka+" единицы "+number.edinica);
+        }
+        else {
+           console.log("Вы ввели неверное число, нужно от 0 до 999");
+            number.edinica=0;
+            number.desyatka=0;
+            number.sotnya=0;
+        }
+     }
+     number(answer);
+</script>
