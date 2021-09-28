@@ -1,0 +1,21 @@
+<script>
+    var basket=[
+        {
+            goods:"butter",
+            quantity:3,
+            price:50
+        },
+        {
+            goods:"potato",
+            quantity:6,
+            price:3
+        }
+    ]
+    function countBasketPrice(basket){
+    var sum=0;
+    for (var x of basket){
+        sum+=x.price*x.quantity;
+    } return sum;
+}
+    alert("Карзина на сумму "+countBasketPrice(basket)+" долларов");
+</script>
