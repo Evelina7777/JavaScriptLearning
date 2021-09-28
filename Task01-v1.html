@@ -1,0 +1,29 @@
+<script>
+     var answer=+prompt("Введите число от 0 до 999 ");
+     function number(x){
+        if (x>0 && x <10){
+             number.edinica=x;
+             number.desyatka=0;
+             number.sotnya=0;
+             console.log("Сотни "+number.sotnya+" десятки "+number.desyatka+" единицы "+number.edinica);
+         } else if (x>=10 && x<100){
+         number.desyatka=Math.trunc(x/10);
+         number.edinica=x%10;
+         number.sotnya=0;
+         console.log("Сотни "+number.sotnya+" десятки "+number.desyatka+" единицы "+number.edinica);
+        } else if (x>=100 && x<1000){
+     number.sotnya=Math.trunc(x/100);
+     number.edinica=(x%10);
+     number.desyatka=Math.trunc((x%100)/10);
+     console.log("Сотни "+number.sotnya+" десятки "+number.desyatka+" единицы "+number.edinica);
+        }
+        else {
+           console.log("Вы ввели неверное число, нужно от 0 до 999");
+            number.edinica=0;
+            number.desyatka=0;
+            number.sotnya=0;
+        }
+     }
+     number(answer);
+   
+</script> 
