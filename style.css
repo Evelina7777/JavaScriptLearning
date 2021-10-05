@@ -1,0 +1,15 @@
+table {
+            
+    background-color: yellow;
+}
+td {
+    width: 25px;
+    height: 30px;
+    text-align: center;
+    color: gray;
+    background-color: yellow;
+}
+
+.rotate {
+   transform:rotate(180);
+}
