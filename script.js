@@ -1,4 +1,4 @@
-var arrayLetters=[" ","A","B","C","D","E","F","G","H"," "];
+var arrayLetters=[,"A","B","C","D","E","F","G","H",];
 var arrayNumbers=[" ",1,2,3,4,5,6,7,8," "];
 var arrayChessTr1=["Л","К","С","Кор","Ф","C","К","Л"]
 var arrayChessTr2=["П","П","П","П","П","П","П","П"]
